@@ -1,14 +1,16 @@
 .palette {
     display: flex;
     justify-content: center;
+    margin-top:10px;
   }
   
   .color {
     width: 2rem;
     height: 2rem;
-    opacity: 0.5;
+    opacity: 0.35;
     transition: all 0.2s;
     cursor: pointer;
+    border-radius:25px;
   }
   
   .color:hover {

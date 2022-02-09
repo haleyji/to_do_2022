@@ -9,13 +9,13 @@
     border: none;
     border-bottom: 1px solid #c5f6fa;
   }
-  
+  .form input::placeholder{
+    color:#ccc;
+  }
   .create-button {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: 1rem;
+    padding: 0px 10px 5px 10px;
+    margin-left:5px;
+    font-size:30px;
     background: #22b8cf;
     border-radius: 3px;
     color: white;

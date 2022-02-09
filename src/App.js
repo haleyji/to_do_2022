@@ -8,13 +8,11 @@ import Palette from './components/Palette';
 const colors = ['#343a40', '#f03e3e', '#12b886', '#228ae6'];
 
 class App extends React.Component{
-  id = 3
+  id = 0
   state = {
     input: '',
     todos: [
-      {id: 0, text: '리액트 소개', checked: false},
-      {id: 1, text: '리액트 소개', checked: true},
-      {id: 2, text: '리액트 소개', checked: false},
+
     ],
     color: '#343a40'
   }
@@ -90,9 +88,12 @@ class App extends React.Component{
               onChange={handleChange}
               onCreate={handleCreate}
               color={color}
+              
             />
-          }>
-          <Palette colors={colors} selected={color} onSelect={handleSelectColor}/>
+          }
+          palette={(
+            <Palette colors={colors} selected={color} onSelect={handleSelectColor}/>
+          )}>
           <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
         </TodoListTemplate>
       </div>
